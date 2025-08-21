@@ -14,10 +14,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Simulate some kind of workflow / pipeline failure
-        run: |
-          # Simulate a test failure
-          exit 1
+     # - name: Simulate some kind of workflow / pipeline failure
+     #   run: |
+     #     # Simulate a test failure
+     #     exit 1
 
   notify-on-failure:   # replace these steps with notification integrations
     runs-on: ubuntu-latest
