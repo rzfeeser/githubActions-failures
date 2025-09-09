@@ -26,6 +26,10 @@ jobs:
           # Add your recovery commands here (e.g., cleanup, rollback, notification).
           echo "Recovery actions completed."
 
+      - name: More steps
+        run: |
+          echo "Did we recover??"
+
       - name: Post-Recovery Step
         if: always()
         run: |
